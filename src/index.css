@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: beige;
+}
+.app header {
+  background-color: #292924;
+  padding: 1rem 2rem;
+  color: beige;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 6px 0 10px rgba(0, 0, 0, 0.4);
+}
+.app header > div {
+  background-color: #46463e;
+  padding: 0.5rem 0.75rem;
+  border-radius: 3px;
+}
+button {
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+button:hover {
+  filter: brightness(80%);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+button:active {
+  filter: brightness(50%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+header button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: beige;
+  color: #292924;
+}
+.counter {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.users button,
+.counter button {
+  font-size: 2rem;
+  margin: 1rem;
+  color: beige;
+  background-color: #292924;
+}
+.users button {
+  font-size: 1.25rem;
+}
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  background-color: rgba(41, 41, 36, 0.1);
+  color: #292924;
+  border: 1px solid #292924;
+  min-width: 250px;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  transition: all 0.1s;
+}
+li:hover {
+  background-color: #46463e;
+  color: beige;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
